@@ -2,6 +2,7 @@ package teacherkothai.example.com.teacherkothai;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -48,6 +49,8 @@ public class TutorDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutor_details);
+        getSupportActionBar().setTitle("Tutor Detailed");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         tutorImage = (CircleImageView) findViewById(R.id.tutor_details_image);
         tutorName = (TextView) findViewById(R.id.tutor_details_name);
@@ -200,4 +203,14 @@ public class TutorDetailsActivity extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                overridePendingTransition(R.anim.enter_from_right, R.anim.exit_out_right);
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
+

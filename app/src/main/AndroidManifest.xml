@@ -42,7 +42,8 @@
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
         <activity android:name=".TutorCoursesActivity" />
         <activity android:name=".SearchResultsActivity" />
-        <activity android:name=".TutorDetailsActivity" />
+        <activity android:name=".TutorDetailsActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
         <activity android:name=".StartActivity"/>
         <activity android:name=".IntroActivity"/>
         <activity android:name=".ChatActivity"></activity>

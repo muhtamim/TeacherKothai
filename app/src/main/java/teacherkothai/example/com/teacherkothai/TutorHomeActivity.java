@@ -34,7 +34,7 @@ public class TutorHomeActivity extends AppCompatActivity {
 
         tutorHomeToolbar = (Toolbar) findViewById(R.id.tutor_home_appbar);
         setSupportActionBar(tutorHomeToolbar);
-        getSupportActionBar().setTitle("My Tutor");
+        getSupportActionBar().setTitle("Home Tutor");
 
         tutorViewPager = (ViewPager) findViewById(R.id.tutor_pager);
         tutorSectionPager = new SectionPagerAdapterTutor(getSupportFragmentManager());
