@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <include
+        android:id="@+id/signup_toolbar"
+        layout="@layout/app_bar"
+        />
+
+    <TextView
+        android:id="@+id/signup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/signup_toolbar"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Create a new account"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/signup_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/signup_title"
+        android:layout_alignStart="@+id/signup_title"
+        android:layout_below="@+id/signup_title"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textCapWords|textPersonName" />
+
+    <EditText
+        android:id="@+id/signup_emailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/signup_fullname"
+        android:layout_alignStart="@+id/signup_fullname"
+        android:layout_below="@+id/signup_fullname"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/signup_emailid"
+        android:layout_alignStart="@+id/signup_emailid"
+        android:layout_below="@+id/signup_emailid"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <RadioGroup
+        android:id="@+id/signup_radiogrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tutor_location"
+        android:layout_alignStart="@+id/tutor_location"
+        android:layout_below="@+id/tutor_location"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/signup_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:text="I am a student"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/signup_tutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_marginTop="0dp"
+            android:text="I am a tutor"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/signup_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/signup_password"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/signup_radiogrp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_style1"
+        android:padding="10dp"
+        android:text="Create my account"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/tutor_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView22"
+        android:layout_alignParentBottom="false"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_below="@+id/textView22"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/signup_password"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignStart="@+id/signup_password"
+        android:layout_below="@+id/signup_password"
+        android:layout_marginTop="20dp"
+        android:text="Select your Location"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

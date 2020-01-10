@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "683906239851",
+    "firebase_url": "https://teacherkothai.firebaseio.com",
+    "project_id": "teacherkothai",
+    "storage_bucket": "teacherkothai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683906239851:android:2aa2c9f5d597f80408902e",
+        "android_client_info": {
+          "package_name": "teacherkothai.example.com.teacherkothai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683906239851-bmjhnjkmi6tlmsglj1sdhrdhne22es5t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "teacherkothai.example.com.teacherkothai",
+            "certificate_hash": "5d270a308e5f0964929fcf8136b4d63d256f25dd"
+          }
+        },
+        {
+          "client_id": "683906239851-a8mjnj66jd6tnvnevifrisqmg8bijgld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw262FpxrcYawVk41IiwUEPnq-WQ1YzP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683906239851-a8mjnj66jd6tnvnevifrisqmg8bijgld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

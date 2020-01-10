@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorDetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@color/common_google_signin_btn_text_light_default" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tutor_details_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/usericon" />
+
+    <TextView
+        android:id="@+id/tutor_details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tutor_details_image"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignStart="@+id/tutor_details_image"
+        android:layout_below="@+id/tutor_details_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Sarowar Hussain"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tutor_details_name"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Preofession: "
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tutor_details_profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@+id/textView9"
+        android:text="Student, LU"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="20dp"
+        android:text="Languages Known:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tutor_details_languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignStart="@+id/tutor_details_profession"
+        android:layout_alignTop="@+id/textView11"
+        android:text="English, Bangla"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="20dp"
+        android:text="Expertise:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tutor_details_expertise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignStart="@+id/tutor_details_languages"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13"
+        android:text="Mathematics, Physics"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/tutor_details_sendrequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tutor_details_expertise"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_style1"
+        android:padding="15dp"
+        android:text="Send a request"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

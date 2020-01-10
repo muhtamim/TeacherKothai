@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tutorprofile_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/usericon" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tutorprofile_image"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:text="Name"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/tutorprofile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView16"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@+id/textView16"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Iffti Chy" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="20dp"
+        android:text="Profession"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/tutorprofile_profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignStart="@+id/tutorprofile_name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Student" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_below="@+id/textView19"
+        android:layout_marginTop="20dp"
+        android:text="Languages"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/tutorprofile_languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView20"
+        android:layout_alignStart="@+id/tutorprofile_name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="English, Bangla" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_below="@+id/textView20"
+        android:layout_marginTop="20dp"
+        android:text="Expertise"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/tutorprofile_expertise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView21"
+        android:layout_alignStart="@+id/tutorprofile_name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Physics, Chemistry" />
+
+    <Spinner
+        android:id="@+id/tutor_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_below="@+id/textView22"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignStart="@+id/textView21"
+        android:layout_below="@+id/textView21"
+        android:layout_marginTop="20dp"
+        android:text="Your Location:"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/tutorprofile_savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/tutor_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_style1"
+        android:padding="10dp"
+        android:text="Save changes"
+        android:textColor="@android:color/white" />
+
+    <ImageButton
+        android:id="@+id/tutorprofile_imagebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tutorprofile_image"
+        android:layout_toEndOf="@+id/tutorprofile_image"
+        app:srcCompat="@mipmap/ic_add_a_photo_black_24dp" />
+
+    <TextView
+        android:id="@+id/tutorprofile_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView22"
+        android:layout_alignStart="@+id/tutorprofile_expertise"
+        android:layout_centerHorizontal="false"
+        android:text="Sylhet"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

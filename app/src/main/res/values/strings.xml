@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Home Tutor</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="study_level">
+        <item> "Primary" </item>
+        <item> "Secondary" </item>
+        <item> "Higher Secondary" </item>
+        <item> "Undergraduate" </item>
+    </string-array>
+
+    <string-array name="locations">
+        <item> "Sylhet" </item>
+        <item> "Dhaka" </item>
+        <item> "Chittagong" </item>
+        <item> "Rajshahi" </item>
+        <item> "Barishal" </item>
+        <item> "Khulna" </item>
+        <item> "Rangpur" </item>
+    </string-array>
+
+    <string-array name="primary">
+        <item> "English" </item>
+        <item> "Mathematics" </item>
+    </string-array>
+
+    <string-array name="secondary">
+        <item> "English" </item>
+        <item> "Mathematics" </item>
+        <item> "Physics" </item>
+        <item> "Chemistry" </item>
+        <item> "Biology" </item>
+        <item> "Accounting" </item>
+    </string-array>
+
+    <string-array name="higher_secondary">
+        <item> "English" </item>
+        <item> "Mathematics" </item>
+        <item> "Physics" </item>
+        <item> "Chemistry" </item>
+        <item> "Biology" </item>
+        <item> "Accounting" </item>
+    </string-array>
+
+    <string-array name="undergraduate">
+        <item> "Web Development" </item>
+        <item> "Competitive Programming" </item>
+        <item> "Android Development" </item>
+        <item> "Robotics" </item>
+        <item> "Grapics and Design" </item>
+        <item> "Artificial Intelligence" </item>
+    </string-array>
+
+</resources>
