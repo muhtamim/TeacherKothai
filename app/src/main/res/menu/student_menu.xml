@@ -4,8 +4,17 @@
 
     <item
         android:id="@+id/student_menu_profile"
-        android:title="Profile" />
+        android:title="Profile"
+        app:showAsAction="always"
+        android:icon="@mipmap/ic_account_circle_black_24dp"/>
     <item
         android:id="@+id/student_menu_logout"
-        android:title="Logout" />
+        android:title="Logout"
+        android:icon="@mipmap/ic_power_settings_new_black_24dp"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/student_menu_note"
+        android:title="Notes"
+        android:icon="@drawable/noteicon"
+        app:showAsAction="always"/>
 </menu>

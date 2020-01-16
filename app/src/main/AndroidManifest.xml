@@ -47,6 +47,32 @@
         <activity android:name=".StartActivity"/>
         <activity android:name=".IntroActivity"/>
         <activity android:name=".ChatActivity"></activity>
+        <activity android:name=".ViewUploadsActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity android:name=".BookActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".CreateNoteActivity"
+            android:label="Create Note"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".NotesActivity"
+            android:label="Notes"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+        <activity
+            android:name=".SchedulerActivity"
+            android:label="Schedules"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".NewScheduleActivity"
+            android:label="New Schedule"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name=".ScheduleUpdateActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity android:name=".NoteUpdateActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
 
         <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat"/>

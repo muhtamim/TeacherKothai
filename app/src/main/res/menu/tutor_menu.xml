@@ -5,9 +5,22 @@
     <item
         android:id="@+id/tutor_menu_about_edit"
         android:icon="@mipmap/ic_account_circle_black_24dp"
-        android:title="About Myself" />
+        android:title="About Myself"
+        app:showAsAction="always"/>
+
     <item
         android:id="@+id/tutor_menu_logout"
         android:icon="@mipmap/ic_power_settings_new_black_24dp"
-        android:title="Logout" />
+        android:title="Logout"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/tutor_menu_pdf"
+        android:icon="@drawable/bookicon"
+        android:title="Logout"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/tutor_menu_schedule"
+        android:icon="@drawable/sheduleicon"
+        android:title="Logout"
+        app:showAsAction="always"/>
 </menu>

@@ -63,6 +63,11 @@ public class StudentHomeActivity extends AppCompatActivity {
             Intent intent = new Intent(StudentHomeActivity.this, StudentProfileActivity.class);
             startActivity(intent);
         }
+        if(item.getItemId() == R.id.student_menu_note){
+            Intent intent = new Intent(StudentHomeActivity.this, NotesActivity.class);
+            startActivity(intent);
+        }
+
         if(item.getItemId() == R.id.student_menu_logout){
             firebaseAuth.signOut();
             Intent intent = new Intent(StudentHomeActivity.this, StartActivity.class);

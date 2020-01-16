@@ -61,6 +61,15 @@ public class TutorHomeActivity extends AppCompatActivity {
             Intent intent = new Intent(TutorHomeActivity.this, TutorProfileActivity.class);
             startActivity(intent);
         }
+        if(item.getItemId() == R.id.tutor_menu_pdf){
+            Intent intent = new Intent(TutorHomeActivity.this, BookActivity.class);
+            startActivity(intent);
+        }
+        if(item.getItemId() == R.id.tutor_menu_schedule){
+            Intent intent = new Intent(TutorHomeActivity.this, SchedulerActivity.class);
+            startActivity(intent);
+        }
+
         if(item.getItemId() == R.id.tutor_menu_logout){
             firebaseAuth.signOut();
             Intent intent = new Intent(TutorHomeActivity.this, StartActivity.class);
