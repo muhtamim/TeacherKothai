@@ -1,6 +1,7 @@
 package teacherkothai.example.com.teacherkothai;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -30,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText userNameET;
     private EditText passwordET;
     private Toolbar logintoolbar;
+    private static Context context;
 
     private ProgressDialog loginProgressDialog;
 
@@ -61,7 +63,17 @@ public class LoginActivity extends AppCompatActivity {
         databaseReference  = FirebaseDatabase.getInstance().getReference();
 
         onLoginClicked();
+        LoginActivity.context = getApplicationContext();
      }
+
+    public static Context getAppContext() {
+        return LoginActivity.context;
+    }
+
+    public static int getPx(Context context, int dimensionDp) {
+        float density = context.getResources().getDisplayMetrics().density;
+        return (int) (dimensionDp * density + 0.5f);
+    }
 
     private void onLoginClicked() {
 

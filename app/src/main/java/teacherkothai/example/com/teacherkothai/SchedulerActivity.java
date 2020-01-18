@@ -61,7 +61,7 @@ public class SchedulerActivity extends AppCompatActivity {
                 underlayButtons.add(new SwipeHelper.UnderlayButton(
                         "Edit",
                         0,
-                        Color.parseColor("#C7C7CB"),
+                        Color.parseColor("#01579B"),
 
                         new SwipeHelper.UnderlayButtonClickListener() {
                             @Override

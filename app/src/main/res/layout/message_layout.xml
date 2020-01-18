@@ -22,7 +22,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_toEndOf="@+id/message_view_image"
-        android:text="Iffti Chy"
+        android:text="Nipa"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 
